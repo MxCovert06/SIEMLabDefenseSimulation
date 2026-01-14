@@ -3,6 +3,9 @@
 This is a project I took interest in because of the current path I am following in HackTheBox and TryHackMe.
 I have always taken an interest in catching attacks as they happen, yet also being able to simulate attacks is equally as important. This lab aims to hold both ends of this interest as I can launch attacks onto an enterprise infrastructure simulation, and be able to see what an SOC analyst would see as it happened.
 
+# Learning Objectives
+I expect to learn from this project a variety of technologies I have never self-hosted before. This will be my first time using Docker as well as Docker Compose (To host a multi-part infrastructure). I have also never self hosted my own SIEM purple-team lab, so this should be a great way to learn installation, utilization, and challenges present.
+
 # How I Modeled The Infrastructure:
 
 I made a simple, yet telling model for this infrastructure. Using the POP_OS as the intermediary in between the Attacker and Target simulates an internal server being probed by an external machine. Oftentimes, in smaller businesses there is not much budget for DMZ's or enhanced security solutions, so utilizing a single server that forwards requests is a normality.
