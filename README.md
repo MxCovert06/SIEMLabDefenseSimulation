@@ -19,3 +19,12 @@ Working with VirtualBox to tune the settings of each Virtual machine required so
 # Installation of Elastic
 
 To get my lab set up, I had Kali Linux, A Windows 10 VM with the FLARE VM suite of tools installed (The only tool we will use is SysMon and ProcMon), and POP_OS which will have elastic installed.
+I will utilize docker to host the Elasticsearch and Kibana. Let us proceed with the installation of Docker
+
+# Docker installation
+`sudo apt install docker.io` - Installed Docker for me
+
+After searching how to install Elastic and its counterparts through Docker, I made it to the pull sections for each version. These versions run on specific CPU architectures. To check our specific architecture, I used `uname -m` and it showed `x86_64`. I will use version `elasticsearch:9.2.4-amd64` for this lab and its corresponding Kibana version. Elastic makes it easy to install direct by supplying the Docker command needed to install the stack.
+
+I used the documentation present on Elastic's official site to install, following each instruction. Having both of my docker 
+containers present, I wrote a shell script to automatically start my containers without typing in a long command each time
